@@ -1,6 +1,6 @@
 {
   "name": "sd-libs",
-  "version": "1.0.5",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -21,7 +21,7 @@
     "mocha": "^6.2.2"
   },
   "dependencies": {
-    "@babel/polyfill": ">=^7.6.0"
+    "@babel/polyfill": "^7.6.0"
   },
   "repository": {
     "type": "git",

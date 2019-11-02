@@ -1,0 +1,26 @@
+{
+  "name": "sd_libs",
+  "version": "1.0.3",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --recursive",
+    "examples": "open ./examples/index.html",
+    "build": "./node_modules/.bin/babel src --out-dir lib"
+  },
+  "author": "minghao <694291423@qq.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "babel-cli": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.6.0"
+  }
+}

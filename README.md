@@ -1,1 +1,2 @@
-npm install sd-libs
+# 安装方式
+`npm install sd-libs`

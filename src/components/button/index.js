@@ -1,18 +1,23 @@
 import React, { Component } from 'react';
+import { Button } from 'antd';
+
 import PropTypes from 'prop-types';
 import './index.less';
 
-class Button extends Component {
+console.log('Button', Button);
+
+class SDButton extends Component {
 
     constructor(props) {
         super(props);
     }
 
     render() {
-        return (<button {...this.props} className='my-btn-style'><span>{this.props.children}</span></button>);
+        return (<Button type="primary" {...this.props} className='my-btn-style'><span>{this.props.children}</span></Button>);
     }
 }
 
-Button.propTypes = {};
+SDButton.propTypes = {};
 
-export default Button; //这里必须export default导出
+export default SDButton; //这里必须export default导出
+

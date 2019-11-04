@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import './style/themes/default.less';
 // 自定义的组件
 import Button from './components/button/index';
 

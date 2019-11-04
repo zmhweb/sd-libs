@@ -1,6 +1,6 @@
 const path = require('path');
 const htmlWebpackPlugin = require('html-webpack-plugin');
-
+console.log(1);
 module.exports = {
     mode: 'development',
     entry: './src/app.js',
@@ -16,6 +16,15 @@ module.exports = {
                 exclude: /node_modules/
             },
             {
+                test: /\.(js|jsx)$/,
+                loader: 'eslint-loader',
+                enforce: 'pre',
+                include: [path.resolve(__dirname, 'src'), path.resolve(__dirname, 'test')],
+                options: {
+                    formatter: require('eslint-friendly-formatter')
+                }
+            },
+            {
                 test: /\.(le|c)ss$/,
                 use: [
                     'style-loader',
@@ -26,6 +35,25 @@ module.exports = {
                         }
                     }
                 ]
+            },
+            {
+                test: /\.(jpg|jpeg|git|png|svg|bmp)$/,
+                use: [{
+                    loader: 'url-loader',
+                    options: {
+                        limit: 10000,
+                        name: 'images/[name]-[hash:8].[ext]'
+                    }
+                }]
+            },
+            {
+                test: /\.(ttf|svg|eot|woff|woff2)$/,
+                use: [{
+                    loader: 'url-loader',
+                    options: {
+                        name: 'fonts/[name]-[hash:8].[ext]'
+                    }
+                }]
             }
         ]
     },

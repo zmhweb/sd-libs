@@ -1,3 +1,3 @@
-import Button from './components/button/index';
+import SDButton from './components/SDButton';
 
-export { Button };
+export { SDButton };

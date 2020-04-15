@@ -1,3 +1,4 @@
 import SDButton from './components/SDButton';
+import SDTable from './components/SDTable';
 
-export { SDButton };
+export { SDButton, SDTable };

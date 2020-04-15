@@ -4,7 +4,7 @@ import { Table } from 'antd';
 import PropTypes from 'prop-types';
 import './index.less';
 
-class SDButton extends Component {
+class SDTable extends Component {
 
     constructor(props) {
         super(props);
@@ -22,7 +22,7 @@ class SDButton extends Component {
     }
 }
 
-SDButton.propTypes = {};
+SDTable.propTypes = {};
 
-export default SDButton; // 这里必须export default导出
+export default SDTable; // 这里必须export default导出
 

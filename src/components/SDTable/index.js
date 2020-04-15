@@ -13,10 +13,11 @@ class SDButton extends Component {
     render () {
         const { className } = this.props;
         return (
-            <Table
-                {...this.props}
-                className={`sd-table ${className}`}
-            />
+            <div>测试多组件打包</div>
+            // <Table
+            //     {...this.props}
+            //     className={`sd-table ${className}`}
+            // />
         );
     }
 }

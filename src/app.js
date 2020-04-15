@@ -3,8 +3,7 @@ import ReactDOM from 'react-dom';
 
 import './style/themes/default.less';
 // 自定义的组件
-import SDButton from './components/SDButton';
-import SDTable from './components/SDTable';
+import { SDButton, SDTable } from './index';
 
 class App extends React.Component {
 

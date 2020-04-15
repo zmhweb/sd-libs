@@ -4,11 +4,56 @@ import ReactDOM from 'react-dom';
 import './style/themes/default.less';
 // 自定义的组件
 import SDButton from './components/SDButton';
+import SDTable from './components/SDTable';
 
 class App extends React.Component {
 
     render () {
-        return (<div><SDButton title='这是按钮的提示'>这是一个按钮</SDButton></div>);
+        const dataSource = [
+            {
+                key: '1',
+                name: '胡彦斌',
+                age: 32,
+                address: '西湖区湖底公园1号'
+            },
+            {
+                key: '2',
+                name: '胡彦祖',
+                age: 42,
+                address: '西湖区湖底公园1号'
+            }
+        ];
+
+        const columns = [
+            {
+                title: '姓名',
+                dataIndex: 'name',
+                key: 'name'
+            },
+            {
+                title: '年龄',
+                dataIndex: 'age',
+                key: 'age'
+            },
+            {
+                title: '住址',
+                dataIndex: 'address',
+                key: 'address'
+            }
+        ];
+        return (
+            <div>
+                <SDButton
+                    type='primary'
+                    className='test-btn'
+                    title='这是按钮的提示'
+                >提示</SDButton>
+                <SDTable
+                    dataSource={dataSource}
+                    columns={columns}
+                />
+            </div>
+        );
     }
 
 }

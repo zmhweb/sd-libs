@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button } from 'antd';
+import { Table } from 'antd';
 
 import PropTypes from 'prop-types';
 import './index.less';
@@ -13,12 +13,10 @@ class SDButton extends Component {
     render () {
         const { className } = this.props;
         return (
-            <Button
+            <Table
                 {...this.props}
-                className={`sd-btn ${className}`}
-            >
-                <span>{this.props.children}</span>
-            </Button>
+                className={`sd-table ${className}`}
+            />
         );
     }
 }

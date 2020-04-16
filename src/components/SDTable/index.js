@@ -14,7 +14,7 @@ class SDTable extends Component {
         // const { className = '' } = this.props;
         return (
             <div>表格</div>
-        )
+        );
         // <Table
         // // {...this.props}
         // // className={`sd-table ${className}`}

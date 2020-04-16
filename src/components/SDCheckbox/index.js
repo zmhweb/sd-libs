@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Input } from 'antd';
+import { Checkbox } from 'antd';
 
 // import PropTypes from 'prop-types';
 import './index.less';
@@ -13,9 +13,11 @@ class SDCheckbox extends Component {
     render () {
         const { className = '' } = this.props;
         return (
-            <Input
+            <Checkbox
                 {...this.props}
-            />
+            >
+                {this.props.children}
+            </Checkbox>
         );
     }
 }
